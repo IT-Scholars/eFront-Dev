@@ -1,0 +1,1 @@
+{* This text comes from the "cert module" and the onPageFinishLoadingSmartyTpl() function call. It is defined inside the file "module_cert_page_finish.tpl" *}

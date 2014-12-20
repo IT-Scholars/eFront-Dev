@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<module>
+	<title>Virtual Lab</title>
+	<author>Seyed Masoud Sadjadi</author>
+	<date>2014 03 31</date>
+	<version>2.0</version>
+	<description>Virtual lab module</description>
+	<className>module_vLab</className>
+	<requires>3.6.8</requires>
+</module>

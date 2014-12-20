@@ -1,0 +1,4 @@
+keytool -genkey -keystore myKeyStore -alias masoud
+keytool -selfcert -keystore myKeyStore -alias masoud
+jarsigner -keystore myKeyStore webRDP.jar masoud
+scp webRDP.jar portal@ita-portal.cis.fiu.edu:/var/www/html/moodle/mod/deva/

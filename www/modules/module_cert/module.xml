@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<module>
+	<title>Certificate Test</title>
+	<author>Seyed Masoud Sadjadi</author>
+	<date>2014 03 31</date>
+	<version>2.0</version>
+	<description>Certificate test module</description>
+	<className>module_cert</className>
+	<requires>3.6.8</requires>
+</module>

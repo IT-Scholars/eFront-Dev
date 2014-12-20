@@ -1,0 +1,3 @@
+Failed directories:
+/var/www/efront/
+/var/www/efront/.

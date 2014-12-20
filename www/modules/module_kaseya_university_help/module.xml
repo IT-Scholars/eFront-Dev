@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<module>
+	<title>Kaseya University Help</title>
+	<author>Nicolas Ponce</author>
+	<date>2011 03 10</date>
+	<version>.9</version>
+	<description>Allows for uploading files to be visible for all users to see</description>
+	<className>module_kaseya_university_help</className>
+	<requires>3.6.11</requires>
+</module>

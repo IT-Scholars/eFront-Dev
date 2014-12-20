@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+var height = $(document).height();
+var width = $(document).width();
+
+alert("height: " + height + " width: " + width);
+alert("http://localhost/efront/www/modules/module_cert/webRDP.php?hostName=vc11.cis.fiu.edu&hostPort=42011&username=123test-ct&password=kaseya&domain=ITTC&frameWidth="+width+"&frameHeight="+height+"&frameBpp=16");
+$("#tab1").load("http://localhost/efront/www/modules/module_cert/webRDP.php?hostName=vc11.cis.fiu.edu&hostPort=42011&username=123test-ct&password=kaseya&domain=ITTC&frameWidth="+width+"&frameHeight="+height+"&frameBpp=16");
+
+$("#tab2").load("http://localhost/efront/www/modules/module_cert/webRDP.php?hostName=vc11.cis.fiu.edu&hostPort=42012&username=123test-ct&password=kaseya&domain=ITTC&frameWidth=1400&frameHeight=800&frameBpp=16");
+
+$("#tab3").load("http://localhost/efront/www/modules/module_cert/webRDP.php?hostName=vc11.cis.fiu.edu&hostPort=42013&username=123test-ct&password=kaseya&domain=ITTC&frameWidth=1400&frameHeight=800&frameBpp=16");
+
+$("#tab4").load("http://localhost/efront/www/modules/module_cert/webRDP.php?hostName=vc11.cis.fiu.edu&hostPort=42014&username=123test-ct&password=kaseya&domain=ITTC&frameWidth=1400&frameHeight=800&frameBpp=16");
+
+$("#tab5").load("http://localhost/efront/www/modules/module_cert/webRDP.php?hostName=vc11.cis.fiu.edu&hostPort=42015&username=123test-ct&password=kaseya&domain=ITTC&frameWidth=1400&frameHeight=800&frameBpp=16");
+
+});
+</script>
+</head>
+<body>
+
+<div id="tab1"  align="middle" height="800" width="1400" marginwidth="0" marginheight="0">
+tab1
+</div>
+<div id="tab2">
+tab2
+</div>
+<div id="tab3">
+tab3
+</div>
+<div id="tab4">
+tab4
+</div>
+<div id="tab5">
+tab5
+</div>
+
+</body>
+</html>

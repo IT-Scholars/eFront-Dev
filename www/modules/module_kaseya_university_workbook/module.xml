@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<module>
+	<title>Kaseya University Workbook</title>
+	<author>Brande Schweitzer</author>
+	<date>2014 06 10</date>
+	<version>1.0</version>
+	<description>Display Kaseya University Workbook in Tool block</description>
+	<className>module_kaseya_university_workbook</className>
+	<requires>3.6.11</requires>
+</module>

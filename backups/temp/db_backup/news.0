@@ -1,0 +1,9 @@
+a:1:{i:0;a:7:{s:2:"id";s:1:"8";s:5:"title";s:7:"Welcome";s:4:"data";s:848:"<p><strong><span style="font-size: medium;">Welcome to Kaseya University!</span></strong></p>
+<p> </p>
+<p>To get started:</p>
+<ol>
+<li><span>Create an account <a href="../../KaseyaUniversity/PublicContent/AccountCreate-npk/story.html" target="_blank"><span style="color: blue;">(Tutorial)</span></a></span></li>
+<li><span>Activate your account</span></li>
+</ol>
+<p> </p>
+<p><span> <span>If you had an account on our prior learning center, <a href="http://lms.kaseya.com/kedu" target="_blank">http://lms.kasya.com/kedu</a>, you will need to create an account to the new Kaseya University.</span></span> <br /><br /> <span> <strong><span style="color: blue;"><a href="https://helpdesk.kaseya.com/entries/53042197-Kaseya-University-FAQs" target="_blank"><span style="color: blue;">Kaseya University FAQs</span></a></span></strong></span></p>";s:9:"timestamp";s:10:"1406242080";s:6:"expire";s:10:"1419378480";s:10:"lessons_ID";s:1:"0";s:11:"users_LOGIN";s:22:"KaseyaUniversity_Admin";}}

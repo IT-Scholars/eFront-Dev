@@ -1,0 +1,423 @@
+body {
+    font-size: 11pt !important;
+}
+
+.navbar .breadcrumb {
+  margin: 0.2em 0 0;
+}
+.xstooltip {
+    visibility: hidden; 
+    position: absolute; 
+    top: 0;  
+    left: 0; 
+    z-index: 2; 
+
+    font: normal 8pt sans-serif; 
+    padding: 3px; 
+    border: solid 1px;
+
+    background: url("images/ui-bg_gloss-wave_55_86b3d5_500x100.png") repeat-x scroll 50% 50% #86B3D5;
+    border: 1px solid #4297D7;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#wrapper {
+	background: #fff;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	position: relative;
+	top: 10px;
+}
+
+#wrapper .container a:link,#wrapper .container a:visited {
+	text-decoration: underline;
+}
+
+#wrapper h1 {
+	margin: 0.5em 1em;
+}
+
+#clear {
+	clear: both;
+}
+
+#checkoutButtonsContainer {
+	margin-top: 25px;
+}
+
+#checkoutButtonsContainer div {
+	float: left;
+}
+
+#checkoutbuttoncontainer {
+	padding: 10px;
+	text-align: right;
+}
+
+#wrapper div.container {
+	width: 800px;
+	margin-bottom: 40px;
+	margin-right: 40px;
+	margin-left: 20px;
+}
+
+#wrapper div.hidden {
+	position: absolute;
+	left: -10000px;
+}
+
+#wrapper .page-title {
+	float: left;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#wrapper .tableTop {
+	line-height: 2em;
+	margin: 0.2em 0;
+	text-align: right;
+}
+
+.note{
+	line-height: 1em;
+	margin: 0.2em 0;
+	text-align: left;
+	color:red;
+	float:left;
+}
+
+#wrapper #preview {
+	position: relative;
+	top: .5em;
+	line-height: 2em;
+	margin: 0.2em 0;
+	text-align: left;
+}
+
+/*Checkout*/
+#checkoutContainer label {
+	float: none;
+	width: 100%;
+}
+
+#checkoutContainer textarea {
+	float: none;
+	width: 100%;
+}
+
+/*Forms*/
+form {
+	margin: 0;
+	padding: 0;
+}  /* Standard margin and padding reset, normally done on the body */
+legend {
+	color: #000; /* IE styles legends with blue text by default */
+	margin-left: -7px;
+	/* A hack that only ie reads to position the legend in the same place cross browser */
+}
+
+fieldset {
+	border: 0px solid #dedede;
+	/* Default fieldset borders vary cross browser, so make them the same */
+}
+
+fieldset div {
+	overflow: hidden; /* Contain the floating elements */
+	display: inline-block; /* Give layout in ie to contain float */
+}
+
+fieldset div {
+	display: block;
+}  /* Reset element back to block leaving layout in ie */
+label {
+	float: left;
+	/* Take out of flow so the input starts at the same height */
+	width: 7em; /* Set a width so the inputs line up */
+}
+
+.radio {
+	position: relative;
+	/* Position so children are relative to this container */
+	border: 0; /* Remove the border */
+}
+
+.radio span {
+	position: absolute; /* Take the content of the legend out of flow */
+	top: 0;
+	left: 0; /* and position it to the top left of the fieldset */
+	width: 5em; /* Same width as labels */
+}
+
+.radio ul {
+	margin-left: 5em;
+	/* Since the legend is out of flow. set margin, so inputs are inline */
+	list-style: none; /* Dont want bullets */
+}
+
+.radio li {
+	position: relative; /* Fix a bug in IE zoom functionality */
+	display: inline; /* Display the inputs in a line */
+	white-space: nowrap;
+	/* We dont want a label to wrap between the input and label */
+}
+
+.radio label,.radio input {
+	width: auto;
+	/* Reset the width on the label from the 5em, set earlier */
+	float: none; /* Reset the float from left on the label, set earlier */
+	vertical-align: middle; /* Align the radio buttons with the inputs */
+}
+
+.clear {
+	clear: both;
+}
+
+form fieldset div label,form fieldset div input,form fieldset div select
+	{
+	display: block;
+	margin-bottom: 7px;
+	float: left;
+}
+
+form fieldset div label {
+	width: 7em;
+}
+
+form fieldset div select,form fieldset div input {
+	width: 12em;
+}
+
+form fieldset div.formColumn {
+	float: left;
+	width: 20em;
+	margin: 1em 0em 0em 2em
+}
+
+form fieldset div.formNoColumn {
+	clear: both;
+	width: 42em;
+	margin: 0em 0em 0em 2em
+}
+
+div.formNoColumn textarea {
+	width: 34em;
+	height: 3em;
+}
+
+.buttonColumnDetails {
+	float: right;
+	width: 6em;
+	margin-left: 4em
+}
+
+#devaTable tr {
+	line-height: 2em;
+}
+
+#devaTable tr td {
+	vertical-align: top;
+}
+
+.clear {
+	clear: both;
+}
+
+table.display tbody tr.even:hover {
+	cursor: pointer;
+	background-color: #c5dbec
+}
+
+table.display tbody tr.odd:hover {
+	cursor: pointer;
+	background-color: #c5dbec
+}
+
+table.display tbody tr.even:hover td.sorting_1 {
+	cursor: pointer;
+	background-color: #c5dbec
+}
+
+table.display tbody tr.odd:hover td.sorting_1 {
+	cursor: pointer;
+	background-color: #c5dbec
+}
+
+
+
+
+/* =Message Dropdown Boxes
+*******************************************************/
+/*
+.confirmMessageBox { position:absolute; padding: 0 .7em; width: 400px; top:0px; left:30%; border-color: #A6C9E2; background: #FCFDFD; color:#2E6E9E; z-index: 1000; }
+.infoMessageBox { position:absolute; padding: 0 .7em; width: 200px; top:0px; left:40%; border-color: #A6C9E2; background: #FCFDFD; color:#2E6E9E; z-index: 1000; }
+.errorMessageBox { position:absolute; padding: 0 .7em; width: 200px; top:0px; left:40%; z-index: 1000; }
+button.okButton, button.cancelButton { margin-bottom: 5px; }
+*/
+.infoMessageBox,
+.confirmMessageBox,
+.errorMessageBox {
+    position:absolute;
+    padding: 0 .7em;
+    width: 40%;
+    top:0;
+    margin: 0 30%;
+    z-index: 1000;
+    
+    border-color: #A6C9E2;
+    background: #FCFDFD;
+    color:#2E6E9E;
+    
+}
+button.okButton,
+button.cancelButton {
+    margin-bottom: 5px;
+}
+
+
+/* =Additional Styles added my JAM
+*******************************************************/
+#content {
+    width: 100%;
+}
+
+fieldset.invisiblefieldset button {
+    border: 1px solid #000000;
+    font-weight: bold;
+    height: 25px;
+}
+
+a.devaTabs {
+    display: inline-block;
+    margin: 2px;
+    position: relative;
+    padding: 2px 5px !important; 
+}
+
+#header h1.headermain{
+    height: 27px;
+    overflow: hidden;
+}
+#header .headermenu{
+    position: absolute;
+    background-color: #FAFAFA;
+    width: 40%;
+    right: 0;
+}
+#navmenupopup_jump {
+    width: 50%;
+}
+
+
+div.settings {
+    margin: 0 5px;
+    float: right;
+    display: block; 
+}
+div.clock {
+    float: right;
+    margin: 9px 5px 0 5px !important;
+    display: block !important;
+}
+.timer-navbar {
+    width: 100%;
+}
+.timer-navbutton,
+.timer-navbutton-cert {
+    font-size: 10pt;
+    padding: 0 !important;
+    z-index: 200;
+    border: 0px;
+    margin: 0 !important;
+    position: absolute;
+    right: 0;
+}
+.settings button.open {
+    color: orange !important;
+}
+.settings button.open .ui-icon {
+    background-image: url(../jquery-ui/css/redmond-light/images/ui-icons_f9bd01_256x240.png);
+}
+.settings button.optionsButton {
+    width: 27px;
+    float: right;
+    padding: 10px 13px;
+    height: 27px;
+    margin: 3px 0 0 2px;
+}
+#page .navbar .navbutton .vmControlContainer {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    position: absolute;
+    right: 0;
+    top: 34px;
+}
+.timer-breadcrumb {
+    min-width: 200px !important;
+}
+#screenOptions, #timetools, #vmControlPanel {
+    float: left;
+    padding: 3px 5px;
+}
+#screenOptions {
+    width: 305px;
+    padding: 6px 5px;
+}
+#vmControlPanel {
+    width: 230px;
+}
+.timer-navbutton #timetools {
+    width: 175px;
+}
+#timetools {
+    margin: 3px 5px;
+    padding: 0;
+}
+#toolbar {
+    padding: 15px 0 !important;
+}
+
+/*
+#timetools, #screenOptions, #vmControlPanel {
+    display: none;
+}
+*/
+
+@media only screen and (max-width: 530px) {
+    body {
+	border: 0px solid red;
+    }
+    /*
+    div.settings {
+	display: block !important;
+	margin-right: 5px !important;
+	float: left;
+    }
+    .timer-navbutton {
+	margin: 0 0 -4px 0;
+    }
+    .timer-navbar {
+	width: 100%;
+	min-width: 200px !important;
+    }*/
+    .navbar .breadcrumb ul {
+	width: 250px;
+	height: 15px;
+	overflow: hidden;
+    }
+    
+    .navbar .breadcrumb ul li {
+	display: block;
+	float: left;
+    }
+    .navbar .breadcrumb ul li span {
+	float: left;
+    }
+    .navbar .breadcrumb ul li a {
+	display: block;
+	overflow: hidden;
+    }
+
+    
+    
+}

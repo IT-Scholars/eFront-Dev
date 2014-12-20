@@ -1,0 +1,33 @@
+a:4:{i:0;a:10:{s:2:"id";s:1:"1";s:10:"event_type";s:1:"4";s:10:"after_time";s:1:"0";s:15:"send_conditions";s:6:"a:0:{}";s:15:"send_recipients";s:1:"1";s:7:"subject";s:41:"Kaseya University - Recover your Password";s:7:"message";s:1142:"<p>Dear ###users_name###,<br /><br />This is an automated email sent from <a href="university.kaseya.com">university.kaseya.com</a> because you asked to recover your password. Please click the confirmation link below:.<br /><br />###host_name###/index.php?ctg=reset_pwd&amp;login=###users_login###&amp;id=###md5(###users_login###)###<br /><br />Alternatively, you may copy the link and paste it in your browser's address field.<br />Clicking on the link will confirm that your email address is valid so a new password can be sent to you. </p>
+<p>If you have any questions, please <a title="FAQ" href="https://helpdesk.kaseya.com/entries/59521523-Kaseya-University-Tickets-vs-Support-Tickets-FAQ" target="_blank">visit our FAQ</a>.</p>
+<p>--</p>
+<p>Thank you,<br />The Kaseya University Team<br />###site_name###</p>
+<p><img class="aLF-aPX-J1-J3" src="https://lh3.googleusercontent.com/-aRe5ZtBVm-k/U5uTzdak9eI/AAAAAAAAAG8/tZ_W07TENn8/w1277-h284-no/kaseya-university-logo.png" alt="" width="224" height="50" /><span><span style="font-family: Arial,sans-serif; font-size: small;"><br /></span></span> Kaseya: ###site_motto###</p>
+<p> </p>";s:6:"active";s:1:"1";s:12:"html_message";s:1:"1";s:16:"send_immediately";s:1:"1";}i:1;a:10:{s:2:"id";s:1:"2";s:10:"event_type";s:1:"7";s:10:"after_time";s:1:"0";s:15:"send_conditions";s:6:"a:0:{}";s:15:"send_recipients";s:1:"1";s:7:"subject";s:21:"Recover your password";s:7:"message";s:919:"<p>Dear ###users_name###,<br /><br />This is an automated email sent from <a href="university.kaseya.com">university.kaseya.com</a> with your new account password. <br />Your new password is: <br /><br />###new_password###</p>
+<p>If you have any questions, please<a title="FAQ" href="https://helpdesk.kaseya.com/entries/59521523-Kaseya-University-Tickets-vs-Support-Tickets-FAQ" target="_blank"> visit our FAQ</a>.</p>
+<p>--</p>
+<p>Thank you,<br />The Kaseya University Team<br />###site_name###</p>
+<p><img class="aLF-aPX-J1-J3" src="https://lh3.googleusercontent.com/-aRe5ZtBVm-k/U5uTzdak9eI/AAAAAAAAAG8/tZ_W07TENn8/w1277-h284-no/kaseya-university-logo.png" alt="" width="224" height="50" /><span><span style="font-family: Arial,sans-serif; font-size: small;"><br /></span></span> Kaseya: ###site_motto###</p>
+<p> </p>
+<p>This is an automated email sent from the address: ###host_name### on ###date_time###</p>";s:6:"active";s:1:"1";s:12:"html_message";s:1:"1";s:16:"send_immediately";s:1:"1";}i:2;a:10:{s:2:"id";s:1:"3";s:10:"event_type";s:1:"6";s:10:"after_time";s:1:"0";s:15:"send_conditions";s:6:"a:0:{}";s:15:"send_recipients";s:1:"1";s:7:"subject";s:39:"Kaseya University  - Account Activation";s:7:"message";s:2264:"<p style="margin: 0in; margin-bottom: .0001pt; line-height: 10.8pt;">Dear ###users_name###,</p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: 10.8pt;"> </p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: 10.8pt;">Welcome and thank you for your interest in Kaseya University!  Please activate your account by following this link: ###host_name###/index.php?account=###users_login###&amp;key=###timestamp###</p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: 10.8pt;"> </p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: 10.8pt;"><span style="text-decoration: underline;"><strong>To Begin:</strong></span></p>
+<ol>
+<li>Login into <a href="university.kaseya.com">university.kaseya.com</a>.  <em>Your login is:  </em><strong>###users_login###</strong></li>
+<li>Review the Terms and Conditions, then click <em>Accept and Continue.</em></li>
+</ol>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: 10.8pt;"><span style="text-decoration: underline;"><strong>Resources</strong></span></p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: 10.8pt;"> </p>
+<p style="margin: 0in; margin-bottom: .0001pt; line-height: 10.8pt;">If you have any questions or concerns, please refer to the links below.</p>
+<ul>
+<li><a href="https://helpdesk.kaseya.com/entries/53042287-Kaseya-University-Policies" target="_blank">Kaseya University Policies</a></li>
+<li><a href="https://helpdesk.kaseya.com/entries/53042197-Kaseya-University-FAQs" target="_blank">Kaseya University FAQs</a></li>
+<li><a href="https://helpdesk.kaseya.com/entries/59521523-Kaseya-University-Tickets-vs-Support-Tickets-FAQ" target="_blank">Kaseya University Support</a></li>
+</ul>
+<p>--</p>
+<p>Thank you,<br />The Kaseya University Team<br />###site_name###</p>
+<p><img class="aLF-aPX-J1-J3" src="https://lh3.googleusercontent.com/-aRe5ZtBVm-k/U5uTzdak9eI/AAAAAAAAAG8/tZ_W07TENn8/w1277-h284-no/kaseya-university-logo.png" alt="" width="224" height="50" /><span><span style="font-family: Arial,sans-serif; font-size: small;"><br /></span></span> Kaseya: ###site_motto###</p>
+<p> </p>
+<p>This is an automated email sent from the address: <a href="university.kaseya.com">university.kaseya.com</a> on ###date_time###</p>";s:6:"active";s:1:"1";s:12:"html_message";s:1:"1";s:16:"send_immediately";s:1:"1";}i:3;a:10:{s:2:"id";s:1:"4";s:10:"event_type";s:1:"5";s:10:"after_time";s:1:"0";s:15:"send_conditions";s:6:"a:0:{}";s:15:"send_recipients";s:1:"1";s:7:"subject";s:18:"Registration email";s:7:"message";s:595:"Dear user ###users_name###,<br><br>Welcome to our eLearning platform. <br>Your account was successfully created with the following personal information:<br><br>Login: ###users_login###<br>First name: ###users_name###<br>Last name: ###users_surname###<br>Email address: ###users_email###<br>Language: ###users_language###<br>Comments: ###users_comments###<br><br>For further information you may contact the system administrator through the following URL: ###host_name###/index.php?ctg=contact <br><br>With kind regards<br>---<br>The administration group<br>###site_name###<br>###site_motto###<br>";s:6:"active";s:1:"0";s:12:"html_message";s:1:"0";s:16:"send_immediately";s:1:"1";}}

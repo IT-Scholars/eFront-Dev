@@ -1,0 +1,83 @@
+10
+
+dir
+1083
+svn+ssh://sadjadi@alpha.cis.fiu.edu/var/svn/moodle_vlabs/trunk/mod/deva/jquery-ui/dataTables/examples
+svn+ssh://sadjadi@alpha.cis.fiu.edu/var/svn/moodle_vlabs
+
+
+
+2010-12-02T18:38:27.289985Z
+314
+portal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10c9603c-e319-405c-8d42-cc8e175c4e4a
+
+basic_init
+dir
+
+advanced_init
+dir
+
+api
+dir
+
+examples_support
+dir
+
+server_side
+dir
+
+index.html
+file
+
+
+
+
+2011-03-05T15:23:54.000000Z
+2135b6ed7261956022d43415abee1c4a
+2010-12-02T18:38:27.289985Z
+314
+portal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6242
+
+data_sources
+dir
+
+plug-ins
+dir
+

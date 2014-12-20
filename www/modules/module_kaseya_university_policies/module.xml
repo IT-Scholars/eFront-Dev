@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<module>
+	<title>Kaseya University Policies</title>
+	<author>Brande Schweitzer</author>
+	<date>2014 06 10</date>
+	<version>.9</version>
+	<description>Display Kaseya University Policies to All Users</description>
+	<className>module_kaseya_university_policies</className>
+	<requires>3.6.11</requires>
+</module>

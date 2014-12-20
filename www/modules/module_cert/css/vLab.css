@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	#box { background:url(images/progress-bar-back.gif) right center no-repeat; width:200px; height:20px; float:left; }
+	#perc { background:url(images/progress-bar.gif) right center no-repeat; height:20px; }
+	#text { font-family:tahoma, arial, sans-serif; font-size:11px; color:#000; float:left; padding:3px 0 0 10px; }
+	.ui-progressbar-value { background-image: url(images/pbar-ani.gif); }
+	
+	#toolbar { padding: 15px 6px; }
+/*#vmControlPanel { padding: 20px 0px 10px 10px; background-color: #DFEFFC; width: 99%; margin: 0px 0px 0px 1px; }*/
+	
+	
+/* Aligns the divs in the header navbar  - class added in vmcontrols.js */
+.navbar { padding: 0; }
+#content { margin-top: -5px; }
+
+	.timer-navbar { position: relative; height: 35px; }
+	.timer-breadcrumb { padding: 8px 0 10px 5px; min-width: 400px; }
+	.timer-navbutton { padding: 5px 5px 4px 5px; font-size: 14px; }
+	.timer-navbutton-cert { padding: 5px 5px 12px 5px; font-size: 16px; }
+	.timer-red { color:#FF0000; font-weight: bold; }
+	#editapptime { width: 18px; height: 18px; margin-right: 5px; }
+	
+	.certificate-nav { display:none; }
+	.minWidth { min-width: 900px; }
+
+	
+	@import "../jquery-ui/dataTables/media/css/demo_table_jui.css";
+	
+	/*
+	 * Override styles needed due to the mix of three different CSS sources! For proper examples
+	 * please see the themes example in the 'Examples' section of this site
+	 */
+	.dataTables_info { padding-top: 0; }
+	.dataTables_paginate { padding-top: 0; }
+	.css_right { float: right; }
+	#example_wrapper .fg-toolbar { font-size: 0.8em }
+	#theme_links span { float: left; padding: 2px 10px; }
+	
+    div#users-contain { width: 350px; margin: 20px 0; }
+    div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+    div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+    .ui-dialog .ui-state-error { padding: .3em; }
+    .validateTips { border: 1px solid transparent; padding: 0.3em; }
+    .ui-widget {
+        font-family:Lucida Grande,Lucida Sans,Arial,sans-serif;
+        font-size:0.8em;
+    }
+
+	A.devaTabs:link { border: 1px solid #DFEFFC; padding: 2px 5px 2px 5px; background: #dfeffc url(../jquery-ui/css/redmond/images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2e6e9e; font-size:80%;}
+	A.devaTabs:visited { border: 1px solid #DFEFFC; padding: 2px 5px 2px 5px; background: #dfeffc url(../jquery-ui/css/redmond/images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2e6e9e; font-size:80%;}
+	A.devaTabs:active { border: 1px solid #DFEFFC; padding: 2px 5px 2px 5px; background: #dfeffc url(../jquery-ui/css/redmond/images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2e6e9e; font-size:80%;}
+	A.devaTabs:hover {border: 1px solid #DFEFFC; padding: 2px 5px 2px 5px; background: #dfeffc url(../jquery-ui/css/redmond/images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2e6e9e; font-size:80%;}
+	
+#tabs-wrapper { padding: 5px 5px 5px 5px; }

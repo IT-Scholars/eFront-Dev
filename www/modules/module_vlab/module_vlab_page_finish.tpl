@@ -1,0 +1,1 @@
+This text comes from the "vLab module" and the onPageFinishLoadingSmartyTpl() function call. It is defined inside the file "module_vLab_page_finish.tpl"
