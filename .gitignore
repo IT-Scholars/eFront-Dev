@@ -1,6 +1,5 @@
 www/content/*
 /nbproject/private/
 libraries/configuration.php
-libraries/smarty/themes_cache
-download
-download.1
+www/modules/module_security/checksum_list.txt
+libraries/smarty/themes_cache/
