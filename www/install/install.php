@@ -8,11 +8,10 @@
  */
 session_cache_limiter('none'); //Initialize session
 session_start();
-echo "1\n";
+
 Installation :: setErrorReporting();
 //error_reporting(E_ALL);
 
-echo "2\n";
 /*The inclusion directory*/
 $path = "../../libraries/";
 
@@ -23,7 +22,6 @@ define("G_VERSION_NUM", $matches[1]);
 //preg_match('/\$LastChangedRevision$matches);
 preg_match('/\$build = (\d+);/', file_get_contents($path."globals.php"), $matches);
 
-echo "3\n";
 
 
 
@@ -33,8 +31,6 @@ $versionTypes = array('educational' => 'Educational',
                       'enterprise' => 'Enterprise',
                       'standard' => 'Community++',
                       'community' => 'Community');
-echo "4\n";
-
 define("G_VERSIONTYPE", 'community');
 /*Disable output buffering during installation for better error handling*/
 define("NO_OUTPUT_BUFFERING", true);
@@ -44,7 +40,6 @@ ini_set('include_path', $path.'../PEAR/');
 //ini_set("memory_limit", "-1");
 ini_get("max_execution_time") < 120 ? ini_set("max_execution_time", "120") : null;
 //It is imperative that the smarty directory is writable in order to continue
-echo $path.'smarty/themes_cache';
 if (!is_writable($path.'smarty/themes_cache')) {
  echo Installation :: printErrorMessage("Directory <b>".realpath($path.'smarty/themes_cache')."</b> must be writable by the server in order to continue");
  exit;
