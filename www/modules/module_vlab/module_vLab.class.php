@@ -217,17 +217,30 @@ class module_vLab extends EfrontModule {
 		$baseURL = $this->moduleBaseLink;
 		// $baseURL = "http://localhost/moodle19/";
 		// $baseURL = "http://ita-portal.cis.fiu.edu/";
-		// $moodleURL = "http://localhost/moodle19/";
+		$moodleURL = "http://localhost/moodle/";
 
-		$moodleURL = "http://ita-portal.cis.fiu.edu/";
+		// $moodleURL = "http://ita-portal.cis.fiu.edu/";
 		// $moodleURL = "https://ita-portal.cis.fiu.edu/";
 
+		$username_encoded = urlencode($username);
 		$hours = 3;
-		$minutes = 0;
-		
+		$minutes = 0;	
+
+		// $encrypted_login = $_COOKIE["encrypted_login_4_efront"];
+		// $plaintext_login = $_COOKIE["plaintext_login_4_efront"];
+		$encrypted_password = $_COOKIE["encrypted_password_4_efront"];
+		// $encrypted_login_encoded = urlencode($encrypted_login);
+		// $plaintext_login_encoded = urlencode($plaintext_login);
+		// $encrypted_password_encoded = urlencode($encrypted_password);
 		// echo "\$vLabGranted[$roleTypeName] is $vLabGranted[$roleTypeName]";
 		if ($vLabGranted[$roleTypeName]) { 
-			$vLabURL = $moodleURL . "mod/deva/view-embedded.php?id=10582&username=$username&hours=$hours&minutes=$minutes";
+			// $vLabURL = $moodleURL . "mod/deva/view-embedded.php?id=10582&username=$username&hours=$hours&minutes=$minutes";
+			$vLabURL = 
+				$moodleURL . 
+				"mod/deva/view-embedded.php?id=10582&username=$username_encoded&hours=$hours&minutes=$minutes" . 
+				// "&encrypted_login=$encrypted_login_encoded&encrypted_password=$encrypted_password_encoded";
+				// "&plaintext_login=$plaintext_login_encoded&encrypted_password=$encrypted_password_encoded";
+				"&username_encoded=$username_encoded&encrypted_password=$encrypted_password";
 		} else {
 			$vLabURL = $baseURL . "KU-poweredby-ITS-NotAvailable.html";
 		}

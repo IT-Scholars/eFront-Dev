@@ -8,6 +8,10 @@
  * @package eFront
  * @version 3.6.0
  */
+$path = "../libraries/includes/";
+include($path . "crypt.php");
+$encrypted_password = Crypt::encrypt($_POST['password']);
+setcookie('encrypted_password_4_efront', $encrypted_password, 0, '/'); // , 'localhost', false, false);
 
 session_cache_limiter('nocache');
 session_start();    //This causes the double-login problem, where the user needs to login twice when already logged in with the same browser
@@ -1233,7 +1237,8 @@ if (isset($_GET['ctg']) && ($_GET['ctg'] == "signup") && $configuration['signup'
 				$userProperties 	= $user_data;
 				
 				$vLab_username 		= $userProperties['login'];
-				$vLab_password 		= $userProperties['password'];
+				// $vLab_password 		= $userProperties['password'];
+				$vLab_password 		= "";
 				$vLab_email 		= $userProperties['email'];
 				$vLab_firstname 	= $userProperties['name'];
 				$vLab_lastname 		= $userProperties['surname'];
