@@ -322,6 +322,7 @@ if ($form -> isSubmitted() && $form -> validate()) {
 		// Beging addition
 		$vLab_username 		= $userProperties['login'];
 		$vLab_password 		= $userProperties['password'];
+		// echo "<br/>\$vLab_password: $vLab_password";
 		$vLab_email 		= $userProperties['email'];
 		$vLab_firstname 	= $userProperties['name'];
 		$vLab_lastname 		= $userProperties['surname'];
@@ -329,7 +330,6 @@ if ($form -> isSubmitted() && $form -> validate()) {
 		$vLab_companyname 	= $userProperties['comments'];
 		
 		include(dirname(dirname(__FILE__)) . "/crypt.php");
-		// echo "<br/>\$vLab_password: $vLab_password";
 		$vLab_encrypted_password = Crypt::encrypt($vLab_password);;
 		// echo "<br/>\$vLab_encrypted_password: $vLab_encrypted_password";
 		
@@ -355,8 +355,7 @@ if ($form -> isSubmitted() && $form -> validate()) {
 
 		// auto register	
 		$str = $vLab_moodleURL . "/mod/deva/embedded/auto-register-with-encrypted-password.php?efront=1&username=$vLab_username_urlEncoded&encrypted_password=$vLab_encrypted_password_urlEncoded&email=$vLab_email_urlEncoded&firstname=$vLab_firstname_urlEncoded&lastname=$vLab_lastname_urlEncoded&timezone=$vLab_timezone_urlEncoded&companyname=$vLab_companyname_urlEncoded";	
-		echo "<br/>\$str: $str";
-		exit;
+		// echo "<br/>\$str: $str";
 		$payload = file_get_contents($str);
 		//echo $payload;
 	
@@ -402,10 +401,11 @@ if ($form -> isSubmitted() && $form -> validate()) {
 			// End addition by Masoud Sadjadi
 			
 			// auto start vLab
-			$str = $vLab_moodleURL . "/mod/deva/embedded/auto-start-with-encrypted-password.php?username=$vLab_username_urlEncoded&encrypted_password=$vLab_encrypted_password_urlEncoded&course=$vLab_course_urlEncoded&resourceType=$vLab_resourceType_urlEncoded";
-			// echo $str;
-			// exit;
-			$payload = file_get_contents($str);
+			if (!empty($vLab_password)) {
+				$str = $vLab_moodleURL . "/mod/deva/embedded/auto-start-with-encrypted-password.php?username=$vLab_username_urlEncoded&encrypted_password=$vLab_encrypted_password_urlEncoded&course=$vLab_course_urlEncoded&resourceType=$vLab_resourceType_urlEncoded";
+				// echo $str;
+				$payload = file_get_contents($str);
+			}
 		}
 		// End addition by Masoud Sadjadi
 		
