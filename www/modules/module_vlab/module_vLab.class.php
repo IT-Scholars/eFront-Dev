@@ -217,8 +217,9 @@ class module_vLab extends EfrontModule {
 		$baseURL = $this->moduleBaseLink;
 		// $baseURL = "http://localhost/moodle19/";
 		// $baseURL = "http://ita-portal.cis.fiu.edu/";
-		$moodleURL = "http://localhost/moodle/";
-
+		// $moodleURL = "http://localhost/moodle/";
+		$moodleURL = VLAB_LMS_ROOT;
+		
 		// $moodleURL = "http://ita-portal.cis.fiu.edu/";
 		// $moodleURL = "https://ita-portal.cis.fiu.edu/";
 

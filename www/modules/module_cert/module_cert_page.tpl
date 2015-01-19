@@ -1,5 +1,17 @@
 <div align="center">
 <iframe 
+	src={"{VLAB_LMS_ROOT}mod/deva/view-sms.php?id=10582&embedded=1&username=test44&password=test44"} 
+    align={$frame.align} 
+    height=1000
+    width=100%
+    marginwidth=0
+    marginheight=0 >
+</iframe>
+</div>
+
+<!--
+<div align="center">
+<iframe 
 	src={"http://localhost/moodle19/mod/deva/view-sms.php?id=10582&embedded=1&username=test44&password=test44"} 
     align={$frame.align} 
     height=1000
@@ -8,6 +20,7 @@
     marginheight=0 >
 </iframe>
 </div>
+-->
 
 <!--
 {capture name = "t_network_diagram"}

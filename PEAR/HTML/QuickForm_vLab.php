@@ -23,11 +23,15 @@
  * @link        http://pear.php.net/package/HTML_QuickForm
  */
 
+// Added by Masoud Sadjadi on Jan. 18, 2015
+// to support the definition of VLAB_LMS_ROOT
+$path = "../../libraries/";
+include_once $path."configuration.php";
+
 /**
  * PEAR and PEAR_Error classes, for error handling
  */
 require_once 'QuickForm.php';
-
 /**
  * Create, validate and process HTML forms
  *
@@ -888,7 +892,8 @@ class HTML_QuickForm_vLab extends HTML_QuickForm
 //                "	);\n" .
                 "	\n" .
 //                "	vLabURL = 'http://localhost/moodle19/';\n" .
-                "	vLabURL = 'http://ita-portal.cis.fiu.edu/';\n" .
+//                "	vLabURL = 'http://ita-portal.cis.fiu.edu/';\n" .
+                "	vLabURL = '" . VLAB_LMS_ROOT . "';\n" .
                 "	wscallsURL = vLabURL + 'mod/deva/php/virtuallabs-wscalls.php';\n" .
 //                "	alert('wscallsURL: ' + wscallsURL);\n" .
                 "	\n" .
@@ -1129,7 +1134,8 @@ class HTML_QuickForm_vLab extends HTML_QuickForm
                 "   email 		= frm.elements['email'].value	;\n" .
                 "	\n" .
 //                "	vLabURL = 'http://localhost/moodle19/';\n" .
-                "	vLabURL = 'http://ita-portal.cis.fiu.edu/';\n" .
+//                "	vLabURL = 'http://ita-portal.cis.fiu.edu/';\n" .
+                "	vLabURL = '" . VLAB_LMS_ROOT . "';\n" .
                 "	wscallsURL = vLabURL + 'mod/deva/php/virtuallabs-wscalls.php';\n" .
 //                "	alert('wscallsURL: ' + wscallsURL);\n" .
                 "	\n" .

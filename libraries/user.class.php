@@ -1326,15 +1326,9 @@ abstract class EfrontUser
 		$vLab_courseid 				= 123; // Kaseya 7.0 Fundamentals Workshop
 		$vLab_courseid_urlEncoded 	= rawurlencode($vLab_courseid);
 
-		// $vLab_moodleURL = "http://localhost/moodle19";
-		$vLab_moodleURL = "http://ita-portal.cis.fiu.edu";
-
-		// auto delete	
-		$str = $vLab_moodleURL . "/mod/deva/embedded/auto-delete.php?username=$vLab_username_urlEncoded&courseid=$vLab_courseid_urlEncoded";	
-		// echo $str . '<br>';
-		$payload = file_get_contents($str);
-		// echo $payload;
-		// End addition
+		// $vLab_moodleURL = "http://localhost/moodle19/";
+		// $vLab_moodleURL = "http://ita-portal.cis.fiu.edu/";
+		$vLab_moodleURL = VLAB_LMS_ROOT;
 
 		return true;
 	}

@@ -1,11 +1,17 @@
 <?php
 
+// Added by Masoud Sadjadi on Jan. 18, 2015
+// to support the definition of VLAB_LMS_ROOT
+$path = "../../../libraries/";
+include_once $path."configuration.php";
+
 	$username 	= $_GET["username"]; // username for embedded verions
 	// echo $username;
 	$roleTypeName 	= $_GET["roleTypeName"]; // roleTypeName for embedded verions
 	// echo $roleTypeName;
 	// $baseURL = "http://localhost/moodle19/";
-	$baseURL = "http://ita-portal.cis.fiu.edu/";
+	// $baseURL = "http://ita-portal.cis.fiu.edu/";
+	$baseURL = VLAB_LMS_ROOT;
 	// $kcaTheoryURL = "mod/quiz/view-embedded.php?id=10576&username=$username";
 	$kcaTheoryURL = "mod/quiz/view-embedded.php?id=10864&username=$username";
 	// echo $baseURL . $kcaTheoryURL;

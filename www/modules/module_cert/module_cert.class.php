@@ -215,6 +215,7 @@ class module_cert extends EfrontModule {
 		// src=\"http://localhost/moodle19/mod/deva/embedded/autologin.php?embedded=1&efront=1&username=$username&password=$password&hashed_password=$hashed_password&email=$email&firstname=$firstname&lastname=$lastname&timezone=$timezone\"
 		*/
 		$baseURL = $this->moduleBaseLink;
+		// echo $baseURL;
 		// $baseURL = "http://localhost/moodle19/";
 		// $baseURL = "http://ita-portal.cis.fiu.edu/";
 
