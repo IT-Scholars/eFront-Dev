@@ -230,6 +230,7 @@ class module_vLab extends EfrontModule {
 		// $encrypted_login = $_COOKIE["encrypted_login_4_efront"];
 		// $plaintext_login = $_COOKIE["plaintext_login_4_efront"];
 		$encrypted_password = $_COOKIE["encrypted_password_4_efront"];
+		$encrypted_password_encoded = urlencode($encrypted_password);
 		// $encrypted_login_encoded = urlencode($encrypted_login);
 		// $plaintext_login_encoded = urlencode($plaintext_login);
 		// $encrypted_password_encoded = urlencode($encrypted_password);
@@ -241,7 +242,7 @@ class module_vLab extends EfrontModule {
 				"mod/deva/view-embedded.php?id=10582&username=$username_encoded&hours=$hours&minutes=$minutes" . 
 				// "&encrypted_login=$encrypted_login_encoded&encrypted_password=$encrypted_password_encoded";
 				// "&plaintext_login=$plaintext_login_encoded&encrypted_password=$encrypted_password_encoded";
-				"&username_encoded=$username_encoded&encrypted_password=$encrypted_password";
+				"&username_encoded=$username_encoded&encrypted_password=$encrypted_password_encoded";
 		} else {
 			$vLabURL = $baseURL . "KU-poweredby-ITS-NotAvailable.html";
 		}
