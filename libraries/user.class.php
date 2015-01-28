@@ -1330,6 +1330,13 @@ abstract class EfrontUser
 		// $vLab_moodleURL = "http://ita-portal.cis.fiu.edu/";
 		$vLab_moodleURL = VLAB_LMS_ROOT;
 
+		// auto delete	
+		$str = $vLab_moodleURL . "mod/deva/embedded/auto-delete.php?username=$vLab_username_urlEncoded&courseid=$vLab_courseid_urlEncoded";	
+		// echo $str . '<br>';
+		$payload = file_get_contents($str);
+		// echo $payload;
+		// End addition
+
 		return true;
 	}
 
