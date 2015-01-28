@@ -13,14 +13,14 @@ include_once $path."configuration.php";
 	// $baseURL = "http://ita-portal.cis.fiu.edu/";
 	$baseURL = VLAB_LMS_ROOT;
 	// $kcaTheoryURL = "mod/quiz/view-embedded.php?id=10576&username=$username";
-	$kcaTheoryURL = "mod/quiz/view-embedded.php?id=10864&username=$username";
+	$kcaTheoryURL = "mod/quiz/view-embedded-with-encrypted-password.php?id=10864&username=$username";
 	// echo $baseURL . $kcaTheoryURL;
-	$kcaHandsonURL = "mod/quiz/view-embedded.php?id=10578&username=$username";
+	$kcaHandsonURL = "mod/quiz/view-embedded-with-encrypted-password.php?id=10578&username=$username";
 	// echo $baseURL . $kctHandsonURL;
 	// $kctTheoryURL = "mod/quiz/view-embedded.php?id=10834&username=$username";
-	$kctTheoryURL = "mod/quiz/view-embedded.php?id=10863&username=$username";
+	$kctTheoryURL = "mod/quiz/view-embedded-with-encrypted-password.php?id=10863&username=$username";
 	// echo $baseURL . $kctTheoryURL;
-	$kctHandsonURL = "mod/quiz/view-embedded.php?id=10835&username=$username";
+	$kctHandsonURL = "mod/quiz/view-embedded-with-encrypted-password.php?id=10835&username=$username";
 	// echo $baseURL . $kcaHandsonURL;
 	
 	$kcaGranted = array(
