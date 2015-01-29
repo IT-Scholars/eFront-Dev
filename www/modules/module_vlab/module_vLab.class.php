@@ -239,7 +239,7 @@ class module_vLab extends EfrontModule {
 			// $vLabURL = $moodleURL . "mod/deva/view-embedded.php?id=10582&username=$username&hours=$hours&minutes=$minutes";
 			$vLabURL = 
 				$moodleURL . 
-				"mod/deva/view-embedded.php?id=10582&username=$username_encoded&hours=$hours&minutes=$minutes" . 
+				"mod/deva/view-embedded-with-encrypted-password.php?id=10582&username=$username_encoded&hours=$hours&minutes=$minutes" . 
 				// "&encrypted_login=$encrypted_login_encoded&encrypted_password=$encrypted_password_encoded";
 				// "&plaintext_login=$plaintext_login_encoded&encrypted_password=$encrypted_password_encoded";
 				"&username_encoded=$username_encoded&encrypted_password=$encrypted_password_encoded";
