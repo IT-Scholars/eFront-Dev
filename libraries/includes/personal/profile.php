@@ -330,7 +330,7 @@ if ($form -> isSubmitted() && $form -> validate()) {
 		$vLab_companyname 	= $userProperties['comments'];
 		
 		include(dirname(dirname(__FILE__)) . "/crypt.php");
-		$vLab_encrypted_password = Crypt::encrypt($vLab_password);;
+		$vLab_encrypted_password = Crypt::encrypt($vLab_password);
 		// echo "<br/>\$vLab_encrypted_password: $vLab_encrypted_password";
 		
 		$vLab_username_urlEncoded 			= rawurlencode($vLab_username);
