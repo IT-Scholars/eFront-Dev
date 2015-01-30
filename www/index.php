@@ -1273,8 +1273,7 @@ if (isset($_GET['ctg']) && ($_GET['ctg'] == "signup") && $configuration['signup'
 		
 				// auto register	
 				$str = $vLab_moodleURL . "mod/deva/embedded/auto-register-with-encrypted-password.php?efront=1&username=$vLab_username_urlEncoded&encrypted_password=$vLab_encrypted_password_urlEncoded&email=$vLab_email_urlEncoded&firstname=$vLab_firstname_urlEncoded&lastname=$vLab_lastname_urlEncoded&timezone=$vLab_timezone_urlEncoded&companyname=$vLab_companyname_urlEncoded";	
-				echo $str . '<br>';
-				exit;
+				// echo $str . '<br>';
 				$payload = file_get_contents($str);
 				// echo $payload;
 				// End addition by Masoud Sadjadi
